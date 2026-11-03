@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babak Asadollah - Certificates &amp; Recognition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== SIDEBAR (same on every page) ===== -->
+<div class="sidebar">
+    <img class="profile-pic" src="images/profile.jpg" alt="Babak Asadollah">
+    <h2>Babak Asadollah</h2>
+    <p>PhD Candidate</p>
+    <p>Environmental Resources Engineering</p>
+    <p>SUNY ESF</p>
+    <ul class="nav-links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="presentations.html">Conference Participation</a></li>
+            <li><a href="journey.html">My Academic Journey</a></li>
+            <li><a href="certificates.html" class="active-link">Certificates &amp; Recognition</a></li>
+    </ul>
+    <div class="sidebar-icons">
+        <a href="https://www.linkedin.com/in/babak-asadollah-27894521a/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.researchgate.net/profile/S_Babak_Hs_Asadollah" target="_blank" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+        <a href="https://scholar.google.com/citations?user=qmBKSu0AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+        <a href="mailto:babak.asadollah@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+</div>
+
+<div class="main">
+<div class="content-inner">
+
+    <h1>Certificates &amp; Recognition</h1>
+
+    <div class="legend">
+        <span><i class="dot dot-cert"></i> Certificate</span>
+        <span><i class="dot dot-recog"></i> Recognition</span>
+    </div>
+
+    <div class="cert-card certificate">
+        <div class="cert-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+        <div class="cert-body">
+            <div class="cert-type">Certificate</div>
+            <div class="cert-title">Certificate in University Teaching (CUT) <span class="badge cert-badge">In progress</span></div>
+            <div class="cert-issuer">Future Professoriate Program (FPP)</div>
+            <div class="cert-date"><i class="fa-regular fa-calendar"></i> Fall 2026 &ndash; Spring 2027</div>
+            <div class="cert-desc">Eight-part seminar series on instructional design, active learning, lesson planning, and assessment design, together with departmental teaching requirements and faculty-liaison mentorship.</div>
+        </div>
+    </div>
+    <div class="cert-card certificate">
+        <div class="cert-icon"><i class="fa-solid fa-rocket"></i></div>
+        <div class="cert-body">
+            <div class="cert-type">Certificate</div>
+            <div class="cert-title">SUNY Startup Summer School &mdash; Certificate of Completion <span class="badge cert-badge">Completed</span></div>
+            <div class="cert-issuer">SUNY &amp; SUNY Research Foundation &middot; Class of 2026</div>
+            <div class="cert-date"><i class="fa-regular fa-calendar"></i> July 28, 2026</div>
+            <img class="cert-thumb" src="images/certificates/suny-startup-summer-school-2026.jpg" alt="SUNY Startup Summer School certificate of completion" title="Click to enlarge">
+        </div>
+    </div>
+    <div class="cert-card recognition">
+        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+        <div class="cert-body">
+            <div class="cert-type">Recognition</div>
+            <div class="cert-title">Guest Editor &mdash; <em>Physics and Chemistry of the Earth, Parts A/B/C</em> <span class="badge cert-badge">Active</span></div>
+            <div class="cert-issuer">Elsevier</div>
+            <div class="cert-date"><i class="fa-regular fa-calendar"></i> Since June 2026</div>
+            <div class="cert-desc">Special Issue: &ldquo;Intelligent Hydro-Meteorological Systems: From Data-Driven Forecasting to Early Warning for Extreme Events.&rdquo;</div>
+            <img class="cert-thumb" src="images/certificates/guest-editor-pce-2026.jpg" alt="Guest Editor certificate, Physics and Chemistry of the Earth" title="Click to enlarge">
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('open')"><img id="lightbox-img" alt=""></div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click', function (e) {
+    if (e.target.matches('.cert-thumb')) {
+        document.getElementById('lightbox-img').src = e.target.src;
+        document.getElementById('lightbox').classList.add('open');
+    }
+});
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('open');
+});
+</script>
+</body>
+</html>

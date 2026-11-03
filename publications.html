@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babak Asadollah - Publications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== SIDEBAR (same on every page) ===== -->
+<div class="sidebar">
+    <img class="profile-pic" src="images/profile.jpg" alt="Babak Asadollah">
+    <h2>Babak Asadollah</h2>
+    <p>PhD Candidate</p>
+    <p>Environmental Resources Engineering</p>
+    <p>SUNY ESF</p>
+    <ul class="nav-links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="publications.html" class="active-link">Publications</a></li>
+            <li><a href="presentations.html">Conference Participation</a></li>
+            <li><a href="journey.html">My Academic Journey</a></li>
+            <li><a href="certificates.html">Certificates &amp; Recognition</a></li>
+    </ul>
+    <div class="sidebar-icons">
+        <a href="https://www.linkedin.com/in/babak-asadollah-27894521a/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.researchgate.net/profile/S_Babak_Hs_Asadollah" target="_blank" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+        <a href="https://scholar.google.com/citations?user=qmBKSu0AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+        <a href="mailto:babak.asadollah@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+</div>
+
+<div class="main">
+<div class="content-inner">
+
+    <h1>Publications</h1>
+    <p style="color:#555; margin-bottom:30px;">33 peer-reviewed journal articles &nbsp;&middot;&nbsp; 1 book chapter</p>
+
+    <div class="filter-menu">
+        <button class="filter-btn active" onclick="filterPapers('all', this)">Show All</button>
+        <button class="filter-btn" onclick="filterPapers('rs', this)">#Remote_Sensing</button>
+        <button class="filter-btn" onclick="filterPapers('ml', this)">#Machine_Learning</button>
+        <button class="filter-btn" onclick="filterPapers('nh', this)">#Natural_Hazards</button>
+        <button class="filter-btn" onclick="filterPapers('ag', this)">#Agricultural_Engineering</button>
+        <button class="filter-btn" onclick="filterPapers('wq', this)">#Water_Quality</button>
+        <button class="filter-btn" onclick="filterPapers('he', this)">#Hydraulic_Engineering</button>
+    </div>
+
+    <h2 class="year-header">2026</h2>
+
+    <div class="publication ml rs ag">
+        <div class="pub-title">SMART-Soil: Satellite-based machine learning approach for reliable tracking of soil moisture across CONUS <a class="pub-link" href="https://doi.org/10.1016/j.apsoil.2026.107201" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Antonio Jodar-Abellan, Miguel &Aacute;ngel Pardo</div>
+        <div class="pub-venue">Applied Soil Ecology, 225, 107201 (2026)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Estimation of daily soil moisture (SM) is crucial because it directly affects agricultural productivity, irrigation scheduling, and drought risk assessment. However, most existing satellite-based SM products suffer from two key limitations: (i) strong reliance on radar retrievals, which restricts temporal coverage to the post-2015 period and therefore prevents long-term historical analysis; and (ii) fine-resolution SM maps that are typically obtained via statistical or dynamical downscaling of coarse products, introducing systematic errors and scale-dependent biases. To overcome these limitations, this study proposes a novel framework that estimates daily SM at multiple depths using only land and atmospheric variables from the Moderate Resolution Imaging Spectroradiometer (MODIS). By fully bypassing radar-based inputs and avoiding downscaling of coarse-resolution SM products, our approach natively generates 1-km SM estimates extending back to the early 2000s, enabling consistent, long-term, high-resolution monitoring over the Contiguous United States (CONUS). This study aims to estimate SM in four different depths. The Light Gradient Boosting Machine (LightGBM) optimized with Covariance Matrix Adaptation Evolution Strategy (CMA-ES) was selected to perform the soil moisture estimation on 5, 10, 20 and 50 cm depths. While the increase in depth results in slight accuracy drops, the LightGBM-CMA-ES could perform an accurate estimation. Based on results and considering the surface and deepest soil layer, RMSE ranges from 0.029 to 0.037 m<sup>3</sup>/m<sup>3</sup> while the <i>R</i><sup>2</sup> spans from 0.86 to 0.79, respectively. Spatial analysis of estimations and their associated errors reveals that despite the models&rsquo; good estimation accuracy, soils with fine and coarse textures have respectively negative and positive biases. Temporal evaluation showed that the model can perfectly estimate monthly mean SM levels but has some evidence of under-estimation in modelling monthly maxima&rsquo;s specifically in spring months. Output of this estimation framework would be SM maps with MODIS&rsquo;s reference spatial resolution of 1 km, which enables better and more sustainable agricultural productivity, allows better water resources management and facilitates more efficient environmental monitoring and disaster risk management.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Multi-layer soil moisture estimation; Remote sensing; Feature optimization; Machine learning</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+            <span class="tag tag-ag">#Agricultural_Engineering</span>
+        </div>
+    </div>
+
+    <div class="publication ml rs nh">
+        <div class="pub-title">Satellite-based heat Index estimatioN modEl (SHINE): An integrated machine learning approach for the conterminous United States <a class="pub-link" href="https://doi.org/10.1016/j.isprsjprs.2026.01.018" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Giorgos Mountrakis, Stephen B. Shaw</div>
+        <div class="pub-venue">ISPRS Journal of Photogrammetry and Remote Sensing, 233, 209&ndash;230 (2026)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>The accelerating frequency, duration and intensity of extreme heat events demand accurate, spatially complete heat exposure metrics. Here, a modeling approach is presented for estimating the daily-maximum Heat Index (HI) at 1 km spatial resolution. Our study area covered the conterminous United States (CONUS) during the warm season (May to September) between 2003 and 2023. More than 4.6 million observations from approximately 2000 weather stations were paired with weather-related, geographical, land cover and historical climatic factors to develop the proposed Satellite-based Heat Index estimatioN modEl (SHINE). Selected explanatory variables at daily temporal intervals included reanalysis products from Modern-Era Retrospective analysis for Research and Applications (MERRA) and direct satellite products from the Moderate Resolution Imaging Spectroradiometer (MODIS) sensor.</p>
+            <p>The most influential variables for HI estimation were the MERRA surface layer height and specific humidity products and the dual-pass MODIS daily land surface temperatures. These were followed by land cover products capturing water and forest presence, historical norms of wind speed and maximum temperature, elevation information and the corresponding day of year. An Extreme Gradient Boosting (XGBoost) regressor trained with spatial cross-validation explained 93 % of the variance (<i>R</i><sup>2</sup> = 0.93) and attained a Root Mean Square Error (RMSE) of 1.9&deg;C and a Mean Absolute Error (MAE) of 1.4&deg;C. Comparison of alternative configurations showed that while a MERRA-only model provided slightly higher accuracy (RMSE of 1.8&deg;C), its coarse resolution failed to capture fine-scale heat variations. Conversely, a MODIS-only model offered kilometer-scale spatial resolution but with higher estimation errors (RMSE of 2.9&deg;C). Integrating both MERRA and MODIS sources enabled SHINE to maintain spatial detail and preserved accuracy, underscoring the complementary strengths of reanalysis and satellite products. SHINE also demonstrated resistance to missing MODIS LST observations due to clouds as the additional RMSE error was approximately 0.5&deg;C in the worst case of missing both morning and afternoon MODIS land surface temperature observations. Spatial error analysis revealed &lt;1.7&deg;C RMSE in arid and Mediterranean zones but larger, more heterogeneous errors in the humid Midwest and High Plains. From the policy perspective and considering the HI operational range for public-health heat effects, the proposed SHINE approach outperformed typically used proxies, such as land surface and air temperature. The resulting 1 km daily HI estimations can potentially be used as the foundation of the first wall-to-wall, multi-decadal, high resolution heat dataset for CONUS and offer actionable information for public-health heat studies, energy-demand forecasting and environmental-justice implications.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Heat index; Air temperature; Land surface temperature; MERRA-2; Extreme heat events</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+            <span class="tag tag-nh">#Natural_Hazards</span>
+        </div>
+    </div>
+
+    <div class="publication ml rs ag">
+        <div class="pub-title">Climate-responsive crop forecasting: an EEMD-LSTM fusion approach for improved strategic crop yield simulation <a class="pub-link" href="https://doi.org/10.1007/s11600-025-01764-6" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Yusef Kheyruri, Ahmad Sharafati, Asaad Shakir Hameed</div>
+        <div class="pub-venue">Acta Geophysica, 74, 42 (2026)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Predicting crop yield is complex due to its dependence on multiple meteorological variables. Remote sensing (RS) has become the prime source of climate parameters due to detailed spatial and temporal resolutions; however, its product needs further quality enhancement due to associated errors. The primary aim of this study is to incorporate the EEMD, as a signal modification technique, with the LSTM model, aiming to anticipate crop yield of four strategic crops, namely barley, lentils, pea, and wheat in all provinces of Iran. The annual crop yield of these crops was extracted from Iran&rsquo;s Ministry of Agriculture data over 15 years, spanning from 2005 to 2020. In the context of EEMD-LSTM prediction, four influential climate parameters, including minimum and maximum temperature, precipitation, and the SPEI, were considered as the input variables. The analysis shows that applying EEMD generally enhances the predictive performance of the LSTM model for most agricultural products. For barley, lentils, and peas, EEMD substantially improves accuracy compared with the baseline model. Although its impact on wheat is not statistically significant, EEMD still reduces RMSE by approximately 42%. For lentils, the method yields notable improvements, with reductions of 15.7, 13.8, and 8% in MAE, RMSE, and PCC, respectively. Additionally, when noisy wheat data are removed, the error distribution slightly increases, indicating that wheat exhibits the least improvement among all evaluated crops. The spatial assessment reveals clear geographic differences in the effectiveness of EEMD. The method substantially reduces prediction errors for barley in the northwestern region. A similar, though smaller, improvement is observed for lentils in the same area. Conversely, EEMD increases prediction errors for chickpea production in both the northwest and eastern regions, highlighting strong spatial variability in the model&rsquo;s performance across the study area. The utilization of EEMD, as a noise removal tool, evidently leads to a reduction in model errors and a notable enhancement in the performance of the estimation model. The findings of this study can be utilized in the development of food security policies and enhancement of agricultural product performance across various locations, ultimately increasing productivity.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> EEMD-LSTM; Crop yield prediction; Remote sensing; Agricultural productivity; Deep learning in agriculture</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+            <span class="tag tag-ag">#Agricultural_Engineering</span>
+        </div>
+    </div>
+
+    <!-- ==================== 2025 ==================== -->
+    <h2 class="year-header">2025</h2>
+
+    <div class="publication ml wq">
+        <div class="pub-title">A hybrid EMD-DFA&ndash;LSTM&ndash;MOOTLBO model for accurate water quality index prediction <a class="pub-link" href="https://doi.org/10.1016/j.jwpe.2025.108558" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Arezoo Ariyaei, Yusef Kheyruri, Siyamak Doroudi, Ahmad Sharafati, Asaad Shakir Hameed, Ali Ghozat, <strong>Seyed Babak Haji Seyed Asadollah</strong></div>
+        <div class="pub-venue">Journal of Water Process Engineering, 77, 108558 (2025)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>The Water Quality Index (WQI) is a quantitative methodology that evaluates water quality by integrating various chemical concentration measurements. The calculation of the Water Quality Index (WQI) enhances the analysis of water chemistry; however, its application to analyzing large-scale samples demonstrates significant computational inefficiency. In this study, a novel hybrid deep learning model is proposed that simultaneously enhances the WQI&rsquo;s computational efficiency and prediction accuracy. The hybrid model initially eliminates noise from time-series data by integrating Empirical Mode Decomposition (EMD) with Detrended Fluctuation Analysis (DFA) signal processing techniques. Furthermore, a Multi-Objective Observer&ndash;Teacher&ndash;Learner-Based Optimization (MOOTLBO) is used to simultaneously tune the LSTM model&rsquo;s parameters and select the best features. The proposed method is developed in the study area covering the Illinois River in Illinois, USA, using eight water quality parameters (chlorophyll, Phycocyanin, Turbidity, Temperature, SC, DO, pH, and Nitrate nitrite) from 2014 to 2025. Four models, namely LSTM, EMD-DFA-LSTM, LSTM-MOOTLBO, and the proposed hybrid EMD-DFA-LSTM-MOOTLBO model, are compared based on the prediction performance and error distributions. The results indicate that the suggested model outperformed others, achieving a correlation coefficient (CC) of 0.980, the lowest error values (RMSE = 16.965, PBIS = &minus;4.353), and the highest Nash-Sutcliffe efficiency index (NSE = 0.948). Findings demonstrate that the proposed hybrid model was able to increase the WQI prediction accuracy by nearly 190 % compared to the classic LSTM model as the benchmark model. This innovative framework significantly reinterprets traditional viewpoints regarding the applications of machine learning within the domain of water resources management. It achieves this by introducing a dependable and efficient methodology for predicting Water Quality Index (WQI), which enhances the overall understanding and effectiveness of water quality assessments and management strategies.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Empirical mode decomposition; Long short-term memory; Multi-objective optimization; Selection feature; Water quality index</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-wq">#Water_Quality</span>
+        </div>
+    </div>
+
+    <!-- #31 Monocular depth estimation -->
+    <div class="publication ml rs">
+        <div class="pub-title">Enhanced monocular depth estimation using novel scale-invariant Error Structure Similarity Index measure optimization in Convolutional Neural Network architecture <a class="pub-link" href="https://doi.org/10.1016/j.jvcir.2025.104531" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Hemmati E., Jarahizadeh S., Aghabalaei A., &amp; <strong>Seyed Babak Haji Seyed Asadollah</strong></div>
+        <div class="pub-venue">Journal of Visual Communication and Image Representation</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Monocular depth estimation is a fundamental task in computer vision with applications in autonomous systems and environmental mapping. This study proposes a novel Convolutional Neural Network (CNN) architecture optimized using a scale-invariant Error Structure Similarity Index Measure (ESSIM). The approach improves depth prediction accuracy by better capturing structural similarity at multiple scales, demonstrating superior performance over existing methods on standard benchmark datasets.</p>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+        </div>
+    </div>
+
+    <div class="publication wq">
+        <div class="pub-title">Evaluating water quality using the Geographical Detector Model in Hong Kong <a class="pub-link" href="https://doi.org/10.1016/j.pce.2025.103971" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Yusef Kheyruri, Ahmad Sharafati, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Arezoo Ariyaei, Asaad Shakir Hameed, Reza Farzad</div>
+        <div class="pub-venue">Physics and Chemistry of the Earth, 139, 103971 (2025)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Assessing water quality is one of the most important fields in water resources management and environmental science. In this context, physical and chemical water parameters, including Water Temperature (WT), pH, Salinity (SAL), Dissolved Oxygen (DO), and concentrations of trace elements like iron (Fe), aluminum (Al), and barium (Ba) play a crucial role in evaluating water quality. The Geographical Detector Model (GDM) is a powerful statistical tool that can be used to analyze and predict the impact of these parameters on water quality by examining variance and data heterogeneity. A notable advantage of GDM is that it can also effectively analyze the relationship between physical and chemical parameters. In this study, we used GDM to analyze 7 physical and 16 chemical parameters that influence the Water Quality Index (WQI), considering both their individual effects and interactions in all rivers of Hong Kong. The findings showed that Suspended Solids (SS) had the greatest impact among physical parameters (0.45) on WQI, while Total Phosphorus (TP) was the most impactful chemical parameter (0.85). Additionally, the results revealed that Turbidity (TUR) and Conductivity (CON) showed the strongest positive interaction among physical parameters (0.93), while the highest interaction among chemical parameters was observed between Al and TP (0.92). Generally, the study suggested that chemical parameters had a greater influence on WQI compared to physical parameters. In other words, WQI showed greater susceptibility to chemical parameter variations.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Geographical detector model; Water quality index; Physical and chemical parameters; Environmental data analysis</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-wq">#Water_Quality</span>
+        </div>
+    </div>
+
+    <div class="publication ml rs wq">
+        <div class="pub-title">Dissolved organic carbon estimation in lakes: Improving machine learning with data augmentation on fusion of multi-sensor remote sensing observations <a class="pub-link" href="https://doi.org/10.1016/j.watres.2025.123350" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Ahmadreza Safaeinia, Sina Jarahizadeh, Francisco Javier Alcal&aacute;, Ahmad Sharafati, Antonio Jodar-Abellan</div>
+        <div class="pub-venue">Water Research, 277, 123350 (2025)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>This paper presents a novel approach for estimating Dissolved Organic Carbon (DOC) concentrations in lakes considering both carbon sources and sink operators. Despite the critical role of DOC, the combined application of machine learning, as a robust predictor, and remote sensing technology, which reduces costly and time-intensive in-situ sampling, has been underexplored in DOC research. Focusing on lakes over the states of New York, Vermont and Maine (United States, U.S.), this study integrates in-situ DOC measurements with surface reflectance bands obtained from Landsat satellites between 2000 and 2020. Using these bands as inputs of the Random Forest (RF) predictive model, the introduced methodology aims to explore the ability of remote sensing data for large-scale DOC simulation. Initial results indicate low accuracy metrics and significant under-estimation due to the imbalance distribution of DOC samples. Statistical analysis showed that the mean DOC concentration was 5.37&plusmn;3.37 mg/L (mean&plusmn;one standard deviation), with peak up to 25 mg/L. A highly skewed distribution of chemical components towards the lower ranges can lead to model misrepresentation of extreme and hazardous events, as they are clouded by unimportant events due to significantly lower occurrence rates. To address this issue, the Synthetic Minority Over-sampling Technique (SMOTE) was applied as a key innovation, generating synthetic samples that enhance RF accuracy and reduce the associated errors. Fusion of in-situ and remote sensing data, combined with machine learning and data augmentation, significantly enhances DOC estimation accuracy, especially in high concentration ranges which are critical for environmental health. With prediction metrics of RMSE = 1.75, MAE = 1.09, and <i>R</i><sup>2</sup> = 0.74, RF-SMOTE significantly improve the metrics obtained from stand-alone RF, particularly in estimating high DOC concentrations. Considering the product spatial resolution of 30 m, the model&rsquo;s output provides potential revenue for global application in lake monitoring, even in remote regions where direct sampling is limited. This novel fusion of remote sensing, machine learning and data augmentation offers valuable insights for water quality management and understanding carbon cycling in aquatic ecosystems.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Dissolved organic carbon; Lakes; Random forest; Data augmentation; Landsat; United States</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+            <span class="tag tag-wq">#Water_Quality</span>
+        </div>
+    </div>
+
+    <!-- ==================== 2024 ==================== -->
+    <h2 class="year-header">2024</h2>
+
+    <div class="publication ag wq">
+        <div class="pub-title">Exploring expert perceptions towards emerging pollutants and their impacts in reused wastewater and agriculture <a class="pub-link" href="https://doi.org/10.1016/j.agwat.2024.109098" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Antonio Jodar-Abellan, Jos&eacute; Antonio Albaladejo-Garc&iacute;a, Pablo Aznar-Crespo, Manuel Ballesta de los Santos, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Abdessamed Derdour, Juan Jos&eacute; Mart&iacute;nez-Nicol&aacute;s, Pablo Melgarejo, Daniel Prats, Francisco Serrano-Bernardo</div>
+        <div class="pub-venue">Agricultural Water Management, 304, 109098 (2024)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Water sustainability involves several natural and human spheres conditioning the availability and quality of water resources and life conservation. Regarding water quality, currently emerging pollutants (EPs) are a key topic at global scale since they are difficult to remove by traditional water treatment systems. In this context, this work aims to evaluate experts&rsquo; perception of several EPs issues with a special focus on semi-arid Mediterranean areas where EPs are negatively impacting water, environmental, and agricultural systems as, in these areas, effluents from water treatment plants are widely reused in the irrigation of crops, urban gardens, and golf courses or directly discharged on natural streams. Particularly, a detailed survey composed of questions about EPs regulation, risk insight, equipment, social and economic impacts, was performed collecting 437 responses. Main results suggested that EPs existence may pose a significant risk and a destabilizing factor in wastewater reuse, with negative impacts to crop irrigation, being managers the class with more concern followed by scientifics and administratives. New EPs regulations raises uncertainty amongst experts since 29 % considered positive its creation, while 20 % estimated this fact as regular and 14 % as negative. As well, although the combination of technologies to improve EPs removal generated agreement, aspects like the treatment charges at water treatment plants or the price/bill of EPs-free water were features of ambiguity. Within EPs elimination, the three expert groups highlighted that technologies impacts in the sustainability spheres will be positive on public health (87 % of responses), social trust (75 %), and environmental sustainability (76 %). Likewise, 88 % of experts concurred that the future of wastewater reuse relies on a combination of technologies. These findings offer valuable information to water legislators and policymakers to manage water resources, especially in semi-arid areas due to the final use of treated effluents and, therefore, the great implications for agriculture, environment and human health.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Expert surveys; Water pollution; Crop irrigation; Wastewater reclaim; Water management; Semi-arid Mediterranean areas</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ag">#Agricultural_Engineering</span>
+            <span class="tag tag-wq">#Water_Quality</span>
+        </div>
+    </div>
+
+    <div class="publication ml">
+        <div class="pub-title">Assessing current and future available resources to supply urban water demands using a high-resolution SWAT model coupled with recurrent neural networks and validated through the SIMPA model in karstic Mediterranean environments <a class="pub-link" href="https://doi.org/10.1007/s11356-024-34404-5" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Antonio Jodar-Abellan, Miguel &Aacute;ngel Pardo, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Ryan T. Bailey</div>
+        <div class="pub-venue">Environmental Science and Pollution Research, 31, 49116&ndash;49140 (2024)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Hydrological simulation in karstic areas is a hard task due to the intrinsic intricacy of these environments and the common lack of data related to their geometry. Hydrological dynamics of karstic sites in Mediterranean semiarid regions are difficult to be modelled mathematically owing to the existence of short wet episodes and long dry periods. In this paper, the suitability of an open-source SWAT method was checked to estimate the comportment of a karstic catchment in a Mediterranean semiarid domain (southeast of Spain), which wet and dry periods were evaluated using box-whisker plots and self-developed wavelet test. A novel expression of the Nash&ndash;Sutcliffe index for arid areas (ANSE) was considered through the calibration and validation of SWAT. Both steps were completed with 20- and 10-year discharge records of stream (1996&ndash;2015 to calibrate the model as this period depicts minimum gaps and 1985&ndash;1995 to validate it). Further, SWAT assessments were made with records of groundwater discharge and relating SWAT outputs with the SIMPA method, the Spain&rsquo;s national hydrological tool. These methods, along with recurrent neural network algorithms, were utilised to examine current and predicted water resources available to supply urban demands considering also groundwater abstractions from aquifers and the related exploitation index. According to the results, SWAT achieved a &ldquo;very good&rdquo; statistical performance (with ANSE of 0.96 and 0.78 in calibration and validation). Spatial distributions of the main hydrological processes, as surface runoff, evapotranspiration and aquifer recharge, were studied with SWAT and SIMPA obtaining similar results over the period with registers (1980&ndash;2016). During this period, the decreasing trend of rainfalls, characterised by short wet periods and long dry periods, has generated a progressive reduction of groundwater recharge. According to algorithms prediction (until 2050), this declining trend will continue reducing groundwater available to meet urban demands and increasing the exploitation index of aquifers. These results offer valuable information to authorities for assessing water accessibility and to provide water demands in karstic areas.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Hydrological modelling; Wavelet analysis; Groundwater exploitation; Deep learning algorithms; Semiarid karstic watersheds</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+        </div>
+    </div>
+
+    <div class="publication ml rs ag">
+        <div class="pub-title">Optimizing machine learning for agricultural productivity: A novel approach with RScv and remote sensing data over Europe <a class="pub-link" href="https://doi.org/10.1016/j.agsy.2024.103955" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Antonio Jodar-Abellan, Miguel &Aacute;ngel Pardo</div>
+        <div class="pub-venue">Agricultural Systems, 218, 103955 (2024)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p><strong>Context:</strong> Accurate estimating of crop yield is crucial for developing effective global food security strategies which can lead to reduce of hunger and more sustainable development. However, predicting crop yields is a complex task as it requires frequent monitoring of many weather and socio-economic factors over an extended period. Satellite remote sensing products have become a reliable source for climate-based variables. They are easier to obtain and provide detailed spatial and temporal coverage.</p>
+            <p><strong>Objective:</strong> The aim of this study is to assess the effectiveness of implement a novel optimization algorithm, called Randomized Search cross validation (RScv), on various machine learning algorithms and measure the prediction accuracy enhancement.</p>
+            <p><strong>Methods:</strong> Annual yields of four crops (Barley, Oats, Rye, and Wheat) were predicted across 20 European countries for 20 years (2000&ndash;2019). Two NASA missions, namely GPCP and GLDAS satellites, provided us with climate- and soil-based input variables. Those variables were employed as the input of four ensemble Machine Learning (ML) algorithms (Ada-Boost (AB), Gradient Boost (GB), Random Forest (RF) and Extra Tree (ET)) which are faster and more adoptable compare to classic AI algorithms.</p>
+            <p><!-- TODO: paste the RESULTS and CONCLUSIONS sections of the abstract here (they were cut off in the screenshot) --></p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Crop yield; Remote sensing; Machine learning; Randomized search; Agricultural prediction</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+            <span class="tag tag-ag">#Agricultural_Engineering</span>
+        </div>
+    </div>
+
+    <div class="publication ag nh">
+        <div class="pub-title">Examining the effects of meteorological drought variability on rainfed cultivation yields in Iran <a class="pub-link" href="https://doi.org/10.1007/s00704-024-05013-6" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Yusef Kheyruri, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Ahmad Sharafati, Ataur Rahman, Seyed Hossein Mohajeri</div>
+        <div class="pub-venue">Theoretical and Applied Climatology, 155, 6427&ndash;6444 (2024)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>The economy and welfare of Iranians are heavily reliant on crops, thus the detrimental effects of drought on crops can have far-reaching consequences for society. In this research, we evaluated the occurrence of meteorological drought and its consequential effect on crop yield (barley, lentils, chickpea, and wheat) in rainfed cultivation within diverse regions of Iran from 2006 to 2020. The results demonstrate that a severe drought affected the majority of regions in Iran in both 2007 and 2016&ndash;2017, resulting in a negative impact on crop yields specifically in regions R1 and R4. The findings from the analysis of crop performance using the SYRS index indicated that in the year 2007, there were significant losses observed in rainfed crops. Furthermore, the regions exhibiting values of &minus;2.38 and &minus;2.35 within the barley crop are the regions characterized by the most significant decline in yield. In 2008, the highest losses in chickpea production were observed in the region R8, with a value of &minus;2.08. Lentils have recorded the highest casualties in the regions of R3 and R7, with &minus;2.71 and &minus;2.65 respectively. From 2007 to 2012, there has been a decline in wheat yield, with R4 experiencing higher losses compared to other regions. Based on the findings of SYRS, it can be concluded that wheat and chickpeas experience greater losses compared to lentils and barley. A study investigating the effect of climatic parameters and drought on rainfed crop yield found that rainfall had a greater influence on the yield of most crops. Moreover, the yield of barley is more significantly influenced by drought compared to other crops in 3 and 7 regions. The findings derived from this research can inform the implementation of suitable measures to address future drought challenges in regions susceptible to drought and regions crucial for agricultural production.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Meteorological drought; Rainfed cultivated; Crop yield; SYRS</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ag">#Agricultural_Engineering</span>
+            <span class="tag tag-nh">#Natural_Hazards</span>
+        </div>
+    </div>
+
+    <div class="publication ml rs nh">
+        <div class="pub-title">Satellite-based ensemble intelligent approach for predicting forest fire: a case of the Hyrcanian forest in Iran <a class="pub-link" href="https://doi.org/10.1007/s11356-024-32615-4" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Ahmad Sharafati, Davide Motta</div>
+        <div class="pub-venue">Environmental Science and Pollution Research (2024)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>A machine learning-based approach is applied to simulate and forecast forest fires in the Golestan province in Iran. A dataset for no-fire, medium confidence (MC) fire events, and high confidence (HC) fire events is constructed from MODIS-MOD14A2. Nine climate variables from NASA&rsquo;s FLDAS are used as input variables, and 12 dates and 915 study points are considered. Three machine learning ensemble multi-label classifiers, gradient boosting (GBC), random forest (RFC), and extremely randomized tree (ETC), are used for forest fire simulation for the period 2000 to 2021, and ETC is found to be the most accurate classifier. Future fire projection for the near-future period of 2030 to 2050 is carried out with the ETC model, using CMIP6 EC-Earth3-SSP245 General Circulation Model (GCM) data. It is projected that MC forest fire occurrences will decrease, while HC forest fire occurrences will increase, and that the summer months, especially September, will be the most affected by fire.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Forest fire; Forecasting; Machine learning; General circulation model</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+            <span class="tag tag-nh">#Natural_Hazards</span>
+        </div>
+    </div>
+
+    <!-- #21 Thermal pollution satellite -->
+    <div class="publication rs wq">
+        <div class="pub-title">Long-Term Water Quality Monitoring: Using Satellite Images for Temporal and Spatial Monitoring of Thermal Pollution in Water Resources <a class="pub-link" href="https://doi.org/10.3390/su16020646" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Reza Naimaee, Abbas Kiani, Sina Jarahizadeh, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Pablo Melgarejo, Antonio Jodar-Abellan</div>
+        <div class="pub-venue">Sustainability, 16(2), 646 (2024)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Thermal pollution reduces water quality through any process that leads to a change in the water&rsquo;s ambient temperature. Karun is one of the most relevant sources of water supply in Iran, and its pollution, created by industrial, urban, and agricultural issues, has been one of the most critical challenges throughout the last few years. As the water temperature rises, the amount of dissolved oxygen in it decreases, thereby affecting the entire ecosystem associated with it. Drainage of urban and industrial runoff into surface water sources can increase the water temperature. Dams also constitute a significant part, modifying spatial patterns of temperature along river routes and causing thermal contamination. In this paper, the thermal pollution of the Karun River was assessed, and regions along this river with unusually raised water temperatures were identified and compared over 20 years. By analyzing the results, it can be found that the thermal pollution from dams has a significant impact on the downstream river environment and ecology that is considerably relevant during summer periods, showing average decreases of 3 degrees Celsius immediately beyond the dams&rsquo; locations (from 41 degrees Celsius upstream dams to 38 degrees Celsius beyond them) or even bigger (reductions of 13 degrees Celsius in one of the studied dams). Hence, our results showed that water temperature is colder downstream in the hot seasons of the year than upstream of the dams. The results suggest that the usage of remote sensing data effectively could complement collected data from ground-based sensors to estimate water temperature and to identify pollution areas. It provides experts with spatially extensive and highly synchronized data.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Water pollution; Thermal imaging; Dam; Landsat satellite; Karun River</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-rs">#Remote_Sensing</span>
+            <span class="tag tag-wq">#Water_Quality</span>
+        </div>
+    </div>
+
+    <!-- ==================== 2023 ==================== -->
+        <div class="publication ml rs">
+        <div class="pub-title">Estimation of soil moisture from remote sensing products using an ensemble machine learning model: a case study of Lake Urmia Basin, Iran <a class="pub-link" href="https://doi.org/10.1007/s12145-023-01172-8" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Ahmad Sharafati, Mohammad Saeedi, Shamsuddin Shahid</div>
+        <div class="pub-venue">Earth Science Informatics, 17, 385&ndash;400 (2024)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>This study investigated the capability of remote sensing soil moisture (SM) datasets to estimate in-situ SM over the Lake Urmia Basin in Iran. A novel meta-estimating approach, called Voting Regression (VR), was used to combine the Gradient Boosting (GB) and Support Vector Regression (SVR) algorithms for developing a new hybrid predictive model named GB-SVR. Six SM products from the Global Land Data Assimilation System (GLDAS), Advanced Microwave Scanning Radiometer 2 (AMSR2), and Soil Moisture Active Passive (SMAP) were used to predict SM at 40 in-situ SM sampling locations. The performance of the proposed novel forecasting technique was evaluated using Correlation Coefficient (CC), Root Mean Square Error (RMSE), and Mean Absolute Error (MAE). The results showed the superiority of GB-SVR compared to GB and SVR, with an average improvement of 17%, 10%, and 13% in CC, RMSE, and MAE, respectively, in predicting in-situ SM. The model performance in different climates, soil textures, and land covers showed its better prediction accuracy in croplands (<i>R</i><sup>2</sup> = 0.86), loam soil (<i>R</i><sup>2</sup> = 0.74) and cold climate (<i>R</i><sup>2</sup> = 0.71), while the least in clay soil and barren lands. Besides, the in-situ SM prediction using remote sensing SM data performed better than that obtained using in-situ air and soil temperature. The proposed methodology can be used for accurate SM prediction in regions lacking in-situ SM data.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Soil moisture; Remote sensing; Voting regression; Gradient boosting; Support vector regression</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+        </div>
+    </div>
+
+    <h2 class="year-header">2023</h2>
+
+
+    <!-- #19 EMD-DFA-DBN drought -->
+    <div class="publication ml rs nh">
+        <div class="pub-title">A novel intelligent approach for predicting meteorological drought based on satellite-based precipitation product: Application of an EMD-DFA-DBN hybrid model <a class="pub-link" href="https://doi.org/10.1016/j.compag.2023.107946" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Ali Ghozat, Ahmad Sharafati, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Davide Motta</div>
+        <div class="pub-venue">Computers and Electronics in Agriculture, 211, 107946 (2023)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>This study uses the long-term Climate Hazards Group InfraRed Precipitation with Station (CHIRPS) dataset with 0.05&deg; spatial resolution to calculate the Standardized Precipitation Index (SPI) signal. The combination of Empirical Mode Decomposition (EMD), Detrended Fluctuation Analysis (DFA) and Deep Belief Network (DBN) as a hybrid model is applied to predict the SPI in the short and long term, i.e. lead times of one, six and twelve months. The performance of the hybrid EMD-DFA-DBN prediction model is evaluated against the hybrid EMD-DFA-MLP model and the stand-alone MLP (Multi-Layer Perceptron) and DBN models. The SPI signal, reconstructed using the EMD-DFA pre-processing method, where the EMD method decomposes the SPI signal into Intrinsic Mode Functions (IMFs) and the DFA method separates high-frequency noisy IMFs from low-frequency useful ones (SNR &asymp; 6.49, PSNR &asymp; 15.85, CC &asymp; 0.88), has lower noise than the original signal; this allows for more accurate predictions of the SPI signal: the DBN-based prediction, with the algorithm trained using the reconstructed SPI signal (CC &asymp; 0.94&ndash;0.98, RMSE &asymp; 0.23&ndash;0.38) is superior to that obtained with the algorithm trained using the original SPI signal (CC &asymp; 0.87&ndash;0.90, RMSE &asymp; 0.47&ndash;0.51), as well as the MLP-based prediction with training on the reconstructed SPI signal (CC &asymp; 0.92&ndash;0.95, RMSE &asymp; 0.24&ndash;0.42) or the original SPI signal (CC &asymp; 0.87&ndash;0.88, RMSE &asymp; 0.48&ndash;0.51). It is found that selecting an appropriate stopping criterion for the sifting process is crucial to correctly decompose and reconstruct SPI with the EMD-DFA method. Using the EMD-DFA-DBN hybrid model reduces the noise but preserves useful information in the SPI signal and allows for accurate prediction of drought through deep learning.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> CHIRPS; Drought prediction; Empirical Mode Decomposition; Detrended Fluctuation Analysis; Deep Belief Network</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+            <span class="tag tag-nh">#Natural_Hazards</span>
+        </div>
+    </div>
+
+    <!-- #18 Surface dust concentration -->
+    <div class="publication ml rs nh">
+        <div class="pub-title">Satellite-based prediction of surface dust mass concentration in southeastern Iran using an intelligent approach <a class="pub-link" href="https://doi.org/10.1007/s00477-023-02473-6" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Ahmad Sharafati, Davide Motta, Antonio Jodar-Abellan, Miguel &Aacute;ngel Pardo</div>
+        <div class="pub-venue">Stochastic Environmental Research and Risk Assessment (2023)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>The southeastern section of Iran, especially the province of Khuzestan, experience severe air pollution levels, such as high values of surface dust mass concentration (SDMC). The province lacks accurate and well-placed ground observational stations, therefore the only viable approach for evaluating SDMC is via remote sensing. In this study, meteorological, hydrological and geological data on 11 input variables from Modern-Era Retrospective analysis for Research and Applications Version 2 (MERRA-2), global precipitation measurement (GPM) and Global Land Data Assimilation System (GLDAS) for the year 2018 are used for prediction of the SDMC values, also obtained from another MERRA-2 mission. For real-time prediction, Pearson&rsquo;s correlation coefficient (PCC) analysis shows that wind-related variables&mdash;surface wind speed, surface aerodynamic conductance and surface pressure&mdash;are those with the highest correlation with SDMC. Using the gradient boosting regression (GBR) algorithm, these three variables can simulate SDMC with good accuracy (<i>R</i><sup>2</sup> = 0.76, <i>NSE</i> = 0.76, <i>N-RMSE</i> = 0.48 and <i>N-MAE</i> = 0.34). Furthermore, near-future SDMC forecasting down to 8 days prior of SMDC occurrence is also carried out. A sequential forward feature selection of the input variables, based on PCC, is used for four lead times and results show that surface pressure and heat flux govern near-future predictions. With <i>R</i><sup>2</sup> = 0.46 and <i>N-RMSE</i> = 0.74, GBR shows good potential for forecasting SDMC 8 days in advance. Real-time and near-future simulation results generally show that robust SDMC prediction can be obtained using exclusively remote sensing data, without ground-based observations.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Surface dust mass concentration; Gradient boosting regression; Prediction; Khuzestan</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+            <span class="tag tag-nh">#Natural_Hazards</span>
+        </div>
+    </div>
+
+    <!-- #17 Sediment pick-up rate -->
+    <div class="publication ml he">
+        <div class="pub-title">Developing a generic relation for predicting sediment pick-up rate using symbolic soft computing techniques <a class="pub-link" href="https://doi.org/10.1007/s11356-022-23450-6" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Masoud Haghbin, Ahmad Sharafati, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Davide Motta</div>
+        <div class="pub-venue">Environmental Science and Pollution Research (2022)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Sediment pick-up rate has been investigated using experimental and numerical approaches. However, the use of soft computing methods for its prediction has received less attention so far. In this study, genetic programming (GP), grammatical evolution (GE), and gradient boosting machine (GBM) algorithms are employed to develop a relation in dimensionless form for predicting sediment pick-up rate in open channel flow based on two experimental datasets. Dimensionless Froude number, particle diameter, and depth-averaged turbulent kinetic energy are input variables for prediction. Prediction performance is evaluated with performance indices (root mean square error, mean absolute error, and coefficient of correlation), visual comparisons (scatter, dot, and Bland&ndash;Altman plots), and uncertainty indicators (Tsallis and Renyi entropies). Three mathematical expressions for sediment pick-up rate prediction are obtained, with GE producing the most accurate results.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Sediment pick-up rate; Open channel flow; Soft computing; Prediction; Entropy</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-he">#Hydraulic_Engineering</span>
+        </div>
+    </div>
+
+    <!-- ==================== 2022 ==================== -->
+    <h2 class="year-header">2022</h2>
+
+    <!-- #16 Aeration stepped cascades SVR -->
+    <div class="publication ml he">
+        <div class="pub-title">An intelligent approach for estimating aeration efficiency in stepped cascades: optimized support vector regression models and mutual information theory <a class="pub-link" href="https://doi.org/10.1007/s00500-022-07437-6" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Ahmad Sharafati, Masoud Haghbin, Davide Motta, Mohamadreza Hosseinian Moghadam Noghani</div>
+        <div class="pub-venue">Soft Computing (2022)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Soft computing (SC) methods have increasingly been used to solve complex hydraulic engineering problems, especially those characterized by high uncertainty. SC approaches have previously proved to be an accurate tool for predicting the aeration efficiency coefficient (E20) in hydraulic structures such as weirs and flumes. In this study, the performance of the standalone support vector regression (SVR) algorithm and three of its hybrid versions, support vector regression&ndash;firefly algorithm (SVR-FA), support vector regression&ndash;grasshopper optimization algorithm (SVR-GOA), and support vector regression&ndash;artificial bee colony (SVR-ABC), is assessed for the prediction of E20 in stepped cascades. Mutual information theory is used to construct input variable combinations for prediction, including the parameters unit discharge (<i>q</i>), the total number of steps (<i>N</i>), step height (<i>h</i>), chute overall length (<i>L</i>), and chute inclination (<i>&alpha;</i>). Entropy indicators, such as maximum likelihood, Jeffrey, Laplace, Schurmann&ndash;Grassberger, and minimax, are computed to quantify the epistemic uncertainty associated with the models. Four indices&mdash;correlation coefficient (R), Nash&ndash;Sutcliffe efficiency (NSE), root mean square error (RMSE), and mean absolute error (MAE)&mdash;are employed for evaluating the models&rsquo; prediction performance. The models&rsquo; outputs reveal that the SVR-FA model (with <i>R</i> = 0.947, NSE = 0.888, RMSE = 0.048 and MAE = 0.027 in testing phase) has the best performance among all the models considered. The input variable combination, including <i>q</i>, <i>N</i>, <i>h</i>, and <i>L</i>, provides the best predictions with the SVR, SVR-FA, and SVR-GOA models. From the uncertainty analysis, the SVR-FA model shows the closest entropy values to the observed ones (3.630 vs. 3.628 for the &ldquo;classic&rdquo; entropy method and 3.647 vs. 3.643 on average for the Bayesian entropy method). This study proves that SC algorithms can be highly accurate in simulating aeration efficiency in stepped cascades and provide a valid alternative to the traditional empirical equation.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Aeration efficiency; Stepped cascades; Support vector regression; Optimization algorithm</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-he">#Hydraulic_Engineering</span>
+        </div>
+    </div>
+
+    <!-- #15 UKMO LSTM PCA -->
+    <div class="publication ml">
+        <div class="pub-title">Post-processing of the UKMO ensemble precipitation product over various regions of Iran: integration of long short-term memory model with principal component analysis <a class="pub-link" href="https://doi.org/10.1007/s00704-022-04170-w" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Sepideh Alizadeh, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Ahmad Sharafati</div>
+        <div class="pub-venue">Theoretical and Applied Climatology (2022)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>An accurate forecast of precipitation can significantly enhance the management of water resources. While the data originated from ground-based synoptic stations are known to be the most accurate inputs of hydrological models, it is mostly unavailable in developing countries. So, the other approaches, such as numerical weather predictions (NWPs), are considered proper alternatives. This study utilized the precipitation data of the UK Meteorological Office (UKMO) model over eight different regions of Iran. The eleven ensemble data of UKMO at 47 ground-based synoptic stations from 2007 and 2017 were chosen as the input variables, while the ground-based precipitation was considered the output variable. The long short-term memory (LSTM) model was used as the predictive model, and the three proposed input strategies were evaluated using correlation coefficient (CC) and normalized-root mean squared error (NRMSE). The results showed that the combination of LSTM and the principal component analysis (PCA) approaches in post-processing of the UKMO data (PPUKMOD) enhances CC and NRMSE by 9% compared to the raw UKMO dataset. Besides, the most performance in PPUKMOD is found in the G7 (Zagros Highlands) region. Moreover, the Zagros mountain and the northern-eastern part of Iran showed better performance in PPUKMOD based on the evaluation of longitude, latitude, and elevation ranges. The temporal assessment also revealed that the highest performance in PPUKMOD was observed in the cold and rainy months (<i>CC</i><sub>average</sub> = 0.59 and <i>NRMSE</i><sub>average</sub> = 0.74) where November was the first rank. The proposed methodology for post-processing the UKMO ensemble sources aligns well with Iran&rsquo;s observed precipitations. Subsequently, it can be used as the input of hydrological models.</p>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+        </div>
+    </div>
+
+    <!-- #14 Morning glory spillway -->
+    <div class="publication ml he">
+        <div class="pub-title">Determination of discharge coefficient of stepped morning glory spillway using a hybrid data-driven method <a class="pub-link" href="https://doi.org/10.1016/j.flowmeasinst.2022.102161" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Masoud Haghbin, Ahmad Sharafati, Roozbeh Aghamajidi, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Mohamadreza Hosseinian Moghadam Noghani, Mar&iacute;a L. Jal&oacute;n</div>
+        <div class="pub-venue">Flow Measurement and Instrumentation, 85, 102161 (2022)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>The accurate assessment of the discharge coefficient (Cd) of spillways is one of the complex problems in the safety of dams and reservoirs. In this research, the capabilities of Support Vector Regression-Invasive Weed Optimization (SVR-IWO), Support Vector Regression (SVR), Gaussian Process Regression (GPR), and Kernel Ridge Regression (KRR) for estimating discharge coefficients of 21 different layouts of morning glory spillways with the different number of vortex breakers are investigated. In addition, the aleatory and epistemic uncertainties are quantified using classical Mutual information theory and four various Bayesian entropies. The Froud number (Fr), number of vortex breakers (N), and three dimensionless parameters consisting of the water height, vortex height, and breaker thickness over the spillway diameter (H/Ds, h/Ds, and t/Ds, respectively), obtained from 120 experiments, were used as input variables. The findings reveal that SVR-IWO is superior to other models based on several performance metrics, including R, RMSE, MSE, and MAE. Besides, the SVR-IWO (<i>R</i> = 0.804, <i>RMSE</i> = 0.131, <i>MSE</i> = 0.017, <i>MAE</i> = 0.074) enhanced the performance indices obtained from standalone SVR (<i>R</i> = 0.632, <i>RMSE</i> = 0.352, <i>MSE</i> = 0.124, <i>MAE</i> = 0.255) up to 86.13%.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Discharge coefficient; Support vector regression; Invasive weed optimization; Information theory; Bayesian entropy; Morning glory spillways</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-he">#Hydraulic_Engineering</span>
+        </div>
+    </div>
+
+    <!-- #13 TRMM flood -->
+    <div class="publication rs nh">
+        <div class="pub-title">A robust stochastic approach in correcting the TRMM precipitation product and simulating flood features <a class="pub-link" href="https://doi.org/10.1007/s10661-022-10030-x" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Ahmad Sharafati, Aminreza Neshat, Naeim Hemmati</div>
+        <div class="pub-venue">Environmental Monitoring and Assessment, 194, 364 (2022)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Logical management and decision-making on water resources require reliable weather variables, where precipitation is considered the main weather variable. Accurate estimation of precipitation is the most important topic in hydrological studies. Due to the lack of a dense network and low temporal and spatial resolution levels at ground-level rain gauges, especially in developing countries, remote sensing methods have been used widely. In recent years, a combination of satellite-ground data on precipitation has led to a more accurate insight into precipitation and improved hydrological model performance. In this study, the Kosar Dam Basin in the Khuzestan province of Iran is selected as the research zone. The TRMM satellite data is used on 50 events to analyze the satellite precipitation data. Copula theory is then employed to check the uncertainties of precipitation estimation, and new precipitations are generated through original data and bias errors. A comparison of the results of the improved TRMM, which was bias-corrected by Gaussian copula, and ground-based rainfall demonstrated the efficacy of this method, with nearly 104% and 51% improvement in the CC and RMSE performance indicators, respectively. The HEC-HMS model was used to simulate flood features based on copula-corrected precipitation over different quartiles (10%, 30%, 50%, 70%, and 90%) and rainfall duration (3, 6, 9, and 24 h). The obtained <i>R</i>-factor values show that the associated uncertainty decreases with rainfall duration, down to 46 and 20% for discharge peak and volume, respectively. In general, the copula approach is a robust approach to improve the accuracy of the TRMM precipitation product for simulating hydrological processes.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> TRMM; Copula modeling; Bias correction; Rainfall-runoff</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-rs">#Remote_Sensing</span>
+            <span class="tag tag-nh">#Natural_Hazards</span>
+        </div>
+    </div>
+
+    <!-- #12 Ensemble ML climate downscaling -->
+    <div class="publication ml">
+        <div class="pub-title">Application of ensemble machine learning model in downscaling and projecting climate variables over different climate regions in Iran <a class="pub-link" href="https://doi.org/10.1007/s11356-021-16964-y" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Ahmad Sharafati, Shamsuddin Shahid</div>
+        <div class="pub-venue">Environmental Science and Pollution Research, 29, 17260&ndash;17279 (2022)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>This study evaluates the future climate fluctuations in Iran&rsquo;s eight major climate regions (G1&ndash;G8). Synoptic data for the period 1995&ndash;2014 was used as the reference for downscaling and estimation of possible alternation of precipitation, maximum and minimum temperature in three future periods, near future (2020&ndash;2040), middle future (2040&ndash;2060), and far future (2060&ndash;2080) for two shared socioeconomic pathways (SSP) scenarios, SSP119 and SSP245. The Gradient Boosting Regression Tree (GBRT) ensemble algorithm has been utilized to implement the downscaling model. Pearson&rsquo;s correlation coefficient (CC) was used to assess the ability of CMIP6 global climate models (GCMs) in replicating observed precipitation and temperature in different climate zones for the based period (1995&ndash;2014) to select the most suitable GCM for Iran. The suitability of 21 meteorological variables was evaluated to select the best combination of inputs to develop the GBRT downscaling model. The results revealed GFDL-ESM4 as the most suitable GCM for replicating the synoptic climate of Iran for the base period. Two variables, namely sea surface temperature (ts) and air temperature (tas), are the most suitable variable for developing a downscaling model for precipitation, while ts, tas, and geopotential height (zg) for maximum temperature, and tas, zg, and sea level pressure (psl) for minimum temperature. The GBRT showed significant improvement in downscaling GCM simulation compared to support vector regression, previously found as most suitable for the downscaling climate in Iran. The projected precipitation revealed the highest increase in arid and semi-arid regions (G1) by an average of 144%, while a declination in the margins of the Caspian Sea (G8) by &minus;74%. The projected maximum temperature showed an increase up to +8&deg;C in highland climate regions. The minimum temperature revealed an increase up to +4&deg;C in the Zagros mountains and decreased by &minus;4&deg;C in different climate zones. The results indicate the potential of the GBRT ensemble machine learning model for reliable downscaling of CMIP6 GCMs for better projections of climate.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Global climate model; Shared socioeconomic pathways scenarios; Gradient Boosting Regression Tree; Climate downscaling; Climate change projections</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+        </div>
+    </div>
+
+    <!-- ==================== 2021 ==================== -->
+    <h2 class="year-header">2021</h2>
+
+    <!-- #11 River dissolved oxygen RNN -->
+    <div class="publication ml wq">
+        <div class="pub-title">An efficient strategy for predicting river dissolved oxygen concentration: application of deep recurrent neural network model <a class="pub-link" href="https://doi.org/10.1007/s10661-021-09586-x" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Salar Valizadeh Moghadam, Ahmad Sharafati, Hajar Feizi, Seyed Mohammad Saeid Marjaie, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Davide Motta</div>
+        <div class="pub-venue">Environmental Monitoring and Assessment, 193, 798 (2021)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Dissolved oxygen (DO) concentration in water is one of the key parameters for assessing river water quality. Artificial intelligence (AI) methods have previously proved to be accurate tools for DO concentration prediction. This study presents the implementation of a deep learning approach applied to a recurrent neural network (RNN) algorithm. The proposed deep recurrent neural network (DRNN) model is compared with support vector machine (SVM) and artificial neural network (ANN) models, formerly shown to be robust AI algorithms. The Fanno Creek in Oregon (USA) is selected as a case study and daily values of water temperature, specific conductance, streamflow discharge, pH, and DO concentration are used as input variables to predict DO concentration for three different lead times (&ldquo;t+1,&rdquo; &ldquo;t+3,&rdquo; and &ldquo;t+7&rdquo;). Based on Pearson&rsquo;s correlation coefficient, several input variable combinations are formed and used for prediction. The model prediction performance is evaluated using various indices such as correlation coefficient, Nash&ndash;Sutcliffe efficiency, root mean square error, and mean absolute error. The results identify the DRNN model (<i>CC</i><sub>Testing</sub> = 0.97, <i>NSE</i><sub>Testing</sub> = 0.948, <i>RMSE</i><sub>Testing</sub> = 0.43 and <i>MAE</i><sub>Testing</sub> = 0.25) as the most accurate among the three models considered, highlighting the potential of deep learning approaches for water quality parameter prediction.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> River water quality; Dissolved oxygen concentration; Predictive algorithm; Deep recurrent neural network; Artificial neural network; Support vector machine</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-wq">#Water_Quality</span>
+        </div>
+    </div>
+
+    <!-- #10 Bagging concrete masonry -->
+    <div class="publication ml">
+        <div class="pub-title">Application of bagging ensemble model for predicting compressive strength of hollow concrete masonry prism <a class="pub-link" href="https://doi.org/10.1016/j.asej.2021.03.028" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Ahmad Sharafati, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Nadhir Al-Ansari</div>
+        <div class="pub-venue">Ain Shams Engineering Journal (2021)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>In the current research, a newly developed ensemble intelligent predictive model called Bagging Regression (BGR) is proposed to predict the compressive strength of a hollow concrete masonry prism (<i>f<sub>p</sub></i>). A matrix of input combinations is constructed based on several predictive variables, including mortar compressive strength (<i>f<sub>m</sub></i>), concrete block compressive strength (<i>f<sub>b</sub></i>), and height to thickness ratio (<i>h/t</i>). Three modeling scenarios based on the different data divisions (i.e., 80&ndash;20%, 75&ndash;25%, and 70&ndash;30%) for training-testing phases are evaluated. The proposed model is validated against classical support vector regression (SVR) and decision tree regression (DTR) models using statistical indicators and graphical presentations. Results indicate the superiority of the BGR over the other models. In quantitative terms, BGR attains minimum root mean square error (RMSE = 1.51 MPa) using the data division scenario of 80&ndash;20% in the testing phase, while DTR and standalone SVR models offer RMSE = 2.55 and 2.33 MPa, respectively.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Hollow concrete block masonry prisms; Bagging regression model; Compressive strength prediction; Data division</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+        </div>
+    </div>
+
+    <!-- #9 Heat wave prediction -->
+    <div class="publication ml nh">
+        <div class="pub-title">Prediction of heat waves using meteorological variables in diverse regions of Iran with advanced machine learning models <a class="pub-link" href="https://doi.org/10.1007/s00477-021-02103-z" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Najeebullah Khan, Ahmad Sharafati, Shamsuddin Shahid, Eun-Sung Chung, Xiao-Jun Wang</div>
+        <div class="pub-venue">Stochastic Environmental Research and Risk Assessment (2021)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Climate change has caused a rise in temperature extremes, particularly heatwaves, in recent decades. Physical-empirical models are developed in this study using two classical machine learning algorithms, namely decision tree (DT) and random forests, and a novel hybrid technique consists of Ada-Boost Regression and decision tree (ABR-DT) for forecasting annual heatwave days (HWDs) of Iran from synoptic predictors. The daily temperature data of Princeton Meteorological Forcing were extracted for 27 points to estimate the annual number of HWDs, and the National Centers for Environmental Prediction reanalysis data were used as predictors. The major synoptic variables were extracted for four pressure levels (e.g., 300, 500, 850, and 1000 hPa) and three monthly time lags. The Principal Component Analysis was employed to reduce the diverse predictors and their features to the most optimal structure. The grid point-based performance evaluation revealed the superiority of ABR-DT, which showed a correlation coefficient (CC) of 0.860 and meant absolute error (MAE) of 6.929, using only specific humidity and wind component as predictors. The spatial performance indices over eight different climate regions of Iran also showed the better performance of ABR-DT, which improved the CC and MAE of its two alternatives up to 185 and 19%. The study identified the optimal parameter combination as the predictors of heatwaves by examining the effects of numerous weather components. The results proved the proposed hybrid forecasting approach&rsquo;s effectiveness in predicting heatwave days, a devastating hazard, for many regions.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Heatwaves; Synoptic predictors; Machine learning; Input sensitivity; Iran</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-nh">#Natural_Hazards</span>
+        </div>
+    </div>
+
+    <!-- #8 Transient storage pollution -->
+    <div class="publication ml wq">
+        <div class="pub-title">Estimating the transient storage parameters for pollution modeling in small streams: a comparison of newly developed hybrid optimization algorithms <a class="pub-link" href="https://doi.org/10.1007/s10661-021-09269-7" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Mohammad Ehteram, Ahmad Sharafati, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Aminreza Neshat</div>
+        <div class="pub-venue">Environmental Monitoring and Assessment, 193, 475 (2021)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>The transient storage model (TSM) is a common approach to assess solute transport and pollution modeling in rivers. Several formulas have been developed to estimate TSM parameters. This study develops a new hybrid optimization algorithm consisting of the dragonfly algorithm and simulated annealing (DA-SA) algorithms. This robust method provides accurate formulas for estimating TSM parameters (e.g., <i>k<sub>f</sub></i>, <i>T</i>, <i>&epsilon;</i>). A dataset gathered by previous scholars from several rivers in the USA was used to assess the proposed formulas based on several error metrics (e.g., <i>RMSE</i>, <i>MAE</i>, and <i>NSE</i>) and visual indicators. According to the results, DA-SA-based formulas adequately estimated the <i>k<sub>f</sub></i> (<i>RMSE</i>: 15.5, <i>NSE</i>: 0.94), <i>T</i> (<i>RMSE</i>: 138.8, <i>NSE</i>: 0.99), and <i>&epsilon;</i> (<i>RMSE</i>: 0.001, <i>NSE</i>: 0.99) parameters. Moreover, the DA-SA-1 showed higher accuracy by improving the RMSE and MAE by 98% compared to the DA and DA-SA-1 as alternatives. The formulas developed in this study significantly outperformed the results of previously proposed models by enhancing the NSE up to 70%. The hybrid DA-SA algorithm method proved highly reliable models to estimate the TSM parameters in the water pollution routing problem, which is vital for reactive solute uptake in advective and transient storage zones of stream ecosystems.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Transient storage model; River pollution; Dragonfly algorithm; Simulated annealing</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-wq">#Water_Quality</span>
+        </div>
+    </div>
+
+    <!-- #7 Climate change urban water demand -->
+    <div class="publication ml">
+        <div class="pub-title">Assessing the impact of climate change on urban water demand and related uncertainties: a case study of Neyshabur, Iran <a class="pub-link" href="https://doi.org/10.1007/s00704-021-03638-5" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Ahmad Sharafati, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Armin Shahbazi</div>
+        <div class="pub-venue">Theoretical and Applied Climatology, 145, 473&ndash;487 (2021)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>This study represents a new strategy for assessing how climate change has impacted urban water demand per capita in Neyshabur, Iran. Future rainfall depths and temperature variations are projected using several general circulation models (GCMs) for two representative concentration pathway (RCP) (i.e., RCP45 and RCP85) scenarios using LARS-WG software. A simulator model is developed using the genetic programming (GP) model to predict future water demand based on projected climate variables of rainfall depth and maximum temperature. The period of 1996&ndash;2016 is selected as the base period. Three future periods, namely the near-future (2021&ndash;2040), middle future (2041&ndash;2060), and far future (2061&ndash;2080), are also employed to assess climate change impact on water demand. Results indicate significant increases in annual projected rainfall depth (14~53%), maximum temperature (0.04~4.21 &deg;C), and minimum temperature (1.01~4.71 &deg;C). The projected monthly patterns of rainfall depth and temperature are predicted to cause a 1-month shift in the water demand peak (i.e., it will occur in April instead of May) for all future periods. Furthermore, the annual water demand per capita is projected to increase by 0.5~1.2%, 1.5~3.2%, and (2.2~7.1%), during the near-, middle-, and far-future periods, respectively. The uncertainty associated with water demand is also projected to increase over time for RCP45. The mathematical expression of urban water demand based on climatic variables is vital to managing the water resources of Neyshabur. The methodology proposed in the present study represents a robust approach to assessing how climate change might affect urban water demand in cities other than Neyshabur and provides crucial information for decision-makers.</p>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+        </div>
+    </div>
+
+    <!-- #6 River water quality index — top cited -->
+    <div class="publication ml wq">
+        <div class="pub-title">River water quality index prediction and uncertainty analysis: A comparative study of machine learning models <a class="pub-link" href="https://doi.org/10.1016/j.jece.2020.104599" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors"><strong>Seyed Babak Haji Seyed Asadollah</strong>, Ahmad Sharafati, Davide Motta, Zaher Mundher Yaseen</div>
+        <div class="pub-venue">Journal of Environmental Chemical Engineering, 9(1), 104599 (2021)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>The Water Quality Index (WQI) is the most common indicator to characterize surface water quality. This study introduces a new ensemble machine learning model called Extra Tree Regression (ETR) for predicting monthly WQI values at the Lam Tsuen River in Hong Kong. The ETR model performance is compared with that of the classic standalone models, Support Vector Regression (SVR) and Decision Tree Regression (DTR). The monthly input water quality data including Biochemical Oxygen Demand (BOD), Chemical Oxygen Demand (COD), Dissolved Oxygen (DO), Electrical Conductivity (EC), Nitrate-Nitrogen (NO<sub>3</sub>-N), Nitrite-Nitrogen (NO<sub>2</sub>-N), Phosphate (PO<sub>4</sub><sup>3&minus;</sup>), potential for Hydrogen (pH), Temperature (T) and Turbidity (TUR) are used for building the prediction models. Various input data combinations are investigated and assessed in terms of prediction performance, using numerical indices and graphical comparisons. The analysis shows that the ETR model generally produces more accurate WQI predictions for both training and testing phases. Although including all the ten input variables achieves the highest prediction performance (<i>R</i><sup>2</sup><sub>test</sub> = 0.98, <i>RMSE</i><sub>test</sub> = 2.99), a combination of input parameters including only BOD, Turbidity and Phosphate concentration provides the second highest prediction accuracy (<i>R</i><sup>2</sup><sub>test</sub> = 0.97, <i>RMSE</i><sub>test</sub> = 3.74). The uncertainty analysis relative to model structure and input parameters highlights a higher sensitivity of the prediction results to the former. In general, the ETR model represents an improvement on previous approaches for WQI prediction, in terms of prediction performance and reduction in the number of input parameters.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Water quality index; River water quality; Lam Tsuen river; Ensemble machine learning</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-wq">#Water_Quality</span>
+        </div>
+    </div>
+
+    <!-- #5 Parshall flume aeration -->
+    <div class="publication ml he">
+        <div class="pub-title">Machine learning model development for predicting aeration efficiency through Parshall flume <a class="pub-link" href="https://doi.org/10.1080/19942060.2021.1922314" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Sangeeta, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Ahmad Sharafati, Parveen Sihag, Nadhir Al-Ansari, Kwok-Wing Chau</div>
+        <div class="pub-venue">Engineering Applications of Computational Fluid Mechanics, 15(1), 889&ndash;901 (2021)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>This study compares several advanced machine learning models to obtain the most accurate method for predicting the aeration efficiency (E<sub>20</sub>) through the Parshall flume. The required dataset is obtained from the laboratory tests using different flumes fabricated in National Institute Technology Kurukshetra, India. Besides, the potential of K Nearest Neighbor (KNN), Random Forest Regression (RFR), and Decision Tree Regression (DTR) models are evaluated to predict the aeration efficiency. In this way, several input combinations (e.g. M1-M15) are provided using the laboratory parameters (e.g. W/L, S/L, Fr, and Re). Different predictive models are obtained based on those input combinations and machine learning models proposed in the present study. The predictive models are assessed based on several performance metrics and visual indicators. Results show that the KNN-M11 model (<i>RMSE</i><sub>testing</sub> = 0.002, <i>R</i><sup>2</sup><sub>testing</sub> = 0.929), which includes W/L, S/L, and Fr as predictive variables outperforms the other predictive models. Furthermore, an enhancement is observed in KNN model estimation accuracy compared to the previously developed empirical models. In general, the predictive model dominated in the present study provides adequate performance in predicting the aeration efficiency in the Parshall flume.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Aeration efficiency; Parshall flume; Prediction; Machine learning models</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-he">#Hydraulic_Engineering</span>
+        </div>
+    </div>
+
+    <!-- ==================== 2020 ==================== -->
+    <h2 class="year-header">2020</h2>
+
+    <!-- #4 Groundwater Rafsanjan -->
+    <div class="publication ml rs">
+        <div class="pub-title">A new artificial intelligence strategy for predicting the groundwater level over the Rafsanjan aquifer in Iran <a class="pub-link" href="https://doi.org/10.1016/j.jhydrol.2020.125468" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Ahmad Sharafati, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Aminreza Neshat</div>
+        <div class="pub-venue">Journal of Hydrology, 591, 125468 (2020)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>This study presents a new strategy to predict the monthly groundwater level with short- and long-lead times over the Rafsanjan aquifer in Iran using an ensemble machine learning method called Gradient Boosting Regression (GBR). In this way, the satellite-based products, including the Tropical Rainfall Measuring Mission (TRMM) and the Gravity Recovery and Climate Experiment (GRACE) datasets, as well as the pumping rate, are used as the predictive variables in different lag times. To obtain the optimal input combinations, the Gamma Test (GT) is employed as a non-linear feature selection technique. The spatial analysis of the performance prediction is performed using several error metrics (e.g., <i>R</i><sup>2</sup>, and <i>NRMSE</i>). Results indicate that the GBR provides a high prediction performance to predict the GWL, whereas the GRACE product is an accurate predictive variable. The correlation analysis between the predicted and observed GWL shows that the coefficient of determination values vary in the range of 0.66 to 0.94 over the different lead times. The spatial pattern of the prediction accuracy indicates that the regions with higher water depth and pumping rate offer higher performance. Moreover, the increasing trends in performance accuracy are observed from the north to south and the west to east of the Rafsanjan aquifer. In general, the proposed approach provides a reliable insight for water resources planner to make a decision based on the accurate modeling results.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Groundwater level; GRACE; TRMM; Gradient Boosted Regression; Prediction; Gamma Test</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+        </div>
+    </div>
+
+    <!-- #3 Suspended sediment ensemble -->
+    <div class="publication ml he">
+        <div class="pub-title">Application of newly developed ensemble machine learning models for daily suspended sediment load prediction and related uncertainty analysis <a class="pub-link" href="https://doi.org/10.1080/02626667.2020.1786571" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Ahmad Sharafati, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Davide Motta, Zaher Mundher Yaseen</div>
+        <div class="pub-venue">Hydrological Sciences Journal, 65(12), 2022&ndash;2042 (2020)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Ensemble machine learning models have been widely used in hydro-systems modeling as robust prediction tools that combine multiple decision trees. In this study, three newly developed ensemble machine learning models, namely gradient boost regression (GBR), AdaBoost regression (ABR) and random forest regression (RFR) are proposed for prediction of suspended sediment load (SSL), and their prediction performance and related uncertainty are assessed. The SSL of the Mississippi River, which is one of the major world rivers and is significantly affected by sedimentation, is predicted based on daily values of river discharge (<i>Q</i>) and suspended sediment concentration (SSC). Based on performance metrics and visualization, the RFR model shows a slight lead in prediction performance. The uncertainty analysis also indicates that the input variable combination has more impact on the obtained predictions than the model structure selection.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Suspended sediment load; Ensemble machine learning; Prediction; Uncertainty analysis</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-he">#Hydraulic_Engineering</span>
+        </div>
+    </div>
+
+    <!-- #2 Effluent quality -->
+    <div class="publication ml wq">
+        <div class="pub-title">The potential of new ensemble machine learning models for effluent quality parameters prediction and related uncertainty <a class="pub-link" href="https://doi.org/10.1016/j.psep.2020.04.045" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Ahmad Sharafati, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Majid Hosseinzadeh</div>
+        <div class="pub-venue">Process Safety and Environmental Protection, 140, 68&ndash;78 (2020)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Accurate simulation of wastewater effluent parameters is a vital concern to reduce the operational costs of a wastewater treatment plant. In this way, a reliable predictive model is a necessity to achieve an acceptable performance. This study represents a novel approach to predict the effluent quality parameters for an industrial wastewater treatment plant in Qom province, Iran. Three new ensemble machine learning models called Ada Boost Regression (ABR), Gradient Boost Regression (GBR) and Random Forest Regression (RFR) are used to predict the effluent quality parameters including Total Dissolved Solids (TDS), five-day Biochemical Oxygen Demand (BOD<sub>5</sub>), and Chemical Oxygen Demand (COD) in daily scale. The gamma test technique is used to obtain the optimistic predictive variables. The performance accuracy of the predictive models is assessed based on several metrics indices and visual performance indicators. Results show that the ABR model provides the most performance for predicting the TDS (<i>CC</i> = 0.962, <i>RMSE</i> = 30.3 mg/l) while the GBR offers a better accuracy to simulate the BOD<sub>5</sub> (<i>CC</i> = 0.9, <i>RMSE</i> = 4.6 mg/l) and COD (<i>CC</i> = 0.75, <i>RMSE</i> = 9.6 mg/l) parameters. The findings obtained from uncertainty analysis indicate that the prediction results are more sensitive to model structure (<i>R-factor</i><sub>TDS</sub> = 0.52, <i>R-factor</i><sub>BOD</sub> = 0.89 and <i>R-factor</i><sub>COD</sub> = 1.06) than the input variables (<i>R-factor</i><sub>TDS</sub> = 0.21, <i>R-factor</i><sub>BOD</sub> = 0.67 and <i>R-factor</i><sub>COD</sub> = 0.62).</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Ensemble machine learning model; Effluent quality parameter; Prediction; Gamma test; Uncertainty</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-wq">#Water_Quality</span>
+        </div>
+    </div>
+
+    <!-- #1 Scouring depth weirs -->
+    <div class="publication ml he">
+        <div class="pub-title">Scouring Depth Assessment Downstream of Weirs Using Hybrid Intelligence Models <a class="pub-link" href="https://doi.org/10.3390/app10113714" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Ahmad Sharafati, Masoud Haghbin, <strong>Seyed Babak Haji Seyed Asadollah</strong>, Nand Kumar Tiwari, Nadhir Al-Ansari, Zaher Mundher Yaseen</div>
+        <div class="pub-venue">Applied Sciences, 10(11), 3714 (2020)</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Considering the scouring depth downstream of weirs is a challenging issue due to its effect on weir stability. The adaptive neuro-fuzzy inference systems (ANFIS) model integrated with optimization methods namely cultural algorithm, biogeography based optimization (BBO), invasive weed optimization (IWO) and teaching learning based optimization (TLBO) are proposed to predict the maximum depth of scouring based on the different input combinations. Several performance indices and graphical evaluators are employed to estimate the prediction accuracy in the training and testing phase. Results show that the ANFIS-IWO offers the highest prediction performance (<i>RMSE</i> = 0.148) compared to other models in the testing phase, while the ANFIS-BBO (<i>RMSE</i> = 0.411) provides the lowest accuracy. The findings obtained from the uncertainty analysis of prediction modeling indicate that the input variables variability has a higher impact on the predicted results than the structure of models. In general, the ANFIS-IWO can be used as a reliable and cost-effective method for predicting the scouring depth downstream of weirs.</p>
+            <div class="pub-keywords"><strong>Keywords:</strong> Weirs; Scouring depth; Adaptive neuro-fuzzy inference systems; Optimization algorithms</div>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-he">#Hydraulic_Engineering</span>
+        </div>
+    </div>
+
+        <!-- ==================== BOOK CHAPTER ==================== -->
+    <h2 class="section-header">Book Chapter</h2>
+
+    <div class="publication ml rs ag">
+        <div class="pub-title">A case study of evaluating Agricultural and Forest Land Conversion into Urban Areas and the Related Increase of the Peak Runoff Rates with GIS-Based Tools and the SWAT Model: Southeast Spain <a class="pub-link" href="https://doi.org/10.52305/QUKP6045" target="_blank" rel="noopener">View article <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="pub-authors">Jodar-Abellan A., Palacios-Cabrera T., Haji Seyed Asadollah S.B., Legua P., Abdessamed D., Melgarejo P.</div>
+        <div class="pub-venue">Teaching in Land Management and Applied Geospatial Tools &mdash; Nova Science Publishers (2023), Chapter 3, pp. 53&ndash;80. ISBN: 979-8-89113-194-1</div>
+        <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Land use change from agricultural and forest areas to urban zones significantly alters hydrological processes and increases flood risk. This book chapter presents a case study from southeast Spain evaluating how land conversion affects peak runoff rates, using GIS-based tools and the SWAT hydrological model. The findings quantify the hydrological consequences of urbanization and demonstrate the utility of integrated geospatial modeling approaches for sustainable land management planning.</p>
+        </details>
+        <div class="pub-tags">
+            <span class="tag tag-ml">#Machine_Learning</span>
+            <span class="tag tag-rs">#Remote_Sensing</span>
+            <span class="tag tag-ag">#Agricultural_Engineering</span>
+        </div>
+    </div>
+
+
+</div>
+</div>
+<script>
+function filterPapers(category, btn) {
+    document.querySelectorAll('.publication').forEach(function (p) {
+        p.classList.toggle('hidden', category !== 'all' && !p.classList.contains(category));
+    });
+    // hide year/section headers that have no visible papers under them
+    document.querySelectorAll('.year-header, .section-header').forEach(function (h) {
+        var el = h.nextElementSibling, any = false;
+        while (el && !el.matches('.year-header, .section-header')) {
+            if (el.classList.contains('publication') && !el.classList.contains('hidden')) any = true;
+            el = el.nextElementSibling;
+        }
+        h.classList.toggle('hidden', !any);
+    });
+    document.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+}
+</script>
+</body>
+</html>
